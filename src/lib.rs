@@ -20,16 +20,13 @@ pub struct DougClient {}
 impl DougClient {
     #[wasm_bindgen(constructor)]
     pub fn new() -> Self {
-        log("DougClient::new()");
+        log("DougClient created");
         Self {}
     }
 
     pub fn update(&self, _time: f32, _height: f32, _width: f32) -> Result<(), JsValue> {
-        log("DougClient.update()");
         Ok(())
     }
 
-    pub fn render(&self) {
-        log("DougClient.render()");
-    }
+    pub fn render(&self) {}
 }
